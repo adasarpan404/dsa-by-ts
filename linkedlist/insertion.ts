@@ -57,12 +57,12 @@ class InsertionLinkedList {
 }
 
 const insertionLinkedList = new InsertionLinkedList();
-// console.log("insertion at head")
-// insertionLinkedList.insertAtHead(1);
-// insertionLinkedList.insertAtHead(2);
-// insertionLinkedList.insertAtHead(3);
+console.log("insertion at head")
+insertionLinkedList.insertAtHead(1);
+insertionLinkedList.insertAtHead(2);
+insertionLinkedList.insertAtHead(3);
 
-// insertionLinkedList.display()
+insertionLinkedList.display()
 
 console.log("insertion at tail")
 const insertionLinkedList1 = new InsertionLinkedList();
