@@ -73,7 +73,6 @@ reverseLinkedList.display();
 
 console.log("Reversing the linked list")
 // reverseLinkedList.reverseIterative()
-// reverseLinkedList.display()
 reverseLinkedList.reverseRecursive()
 reverseLinkedList.display()
 
