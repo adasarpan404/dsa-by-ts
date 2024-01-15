@@ -45,7 +45,6 @@ class PalindromeLinkedList {
             current = next;
         }
         return prev;
-
     }
 
     isPalindrome(): boolean {
