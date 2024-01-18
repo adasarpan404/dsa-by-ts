@@ -58,9 +58,7 @@ class AddOneLinkedList {
             current = current.next!;
         }
         if (carry > 0) {
-            let newHead = new addOneNode(carry);
-            newHead.next = this.head;
-            this.head = newHead;
+            this.append(carry)
         }
         this.head = this.reverse(this.head);
     }
@@ -68,8 +66,8 @@ class AddOneLinkedList {
 
 const addOneLinkedList = new AddOneLinkedList();
 
+addOneLinkedList.append(1);
 addOneLinkedList.append(2);
-addOneLinkedList.append(9);
 addOneLinkedList.append(9);
 
 addOneLinkedList.display();
@@ -77,4 +75,5 @@ addOneLinkedList.display();
 addOneLinkedList.addOne();
 
 addOneLinkedList.display();
+
 
