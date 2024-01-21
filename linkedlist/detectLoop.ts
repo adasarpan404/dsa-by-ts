@@ -74,7 +74,7 @@ detectLoopLinkedList.append(1);
 detectLoopLinkedList.append(2);
 detectLoopLinkedList.append(3);
 detectLoopLinkedList.append(4);
-detectLoopLinkedList.createLoop();
-console.log(detectLoopLinkedList.detectLoop1())
+// detectLoopLinkedList.createLoop();
+// console.log(detectLoopLinkedList.detectLoop1())
 console.log(detectLoopLinkedList.detectLoop2())
 
