@@ -9,9 +9,7 @@ export function selectionSort(arr: number[]): number[] {
         }
         if (minIndex !== i) {
             // Swap elements
-            const temp = arr[i];
-            arr[i] = arr[minIndex];
-            arr[minIndex] = temp;
+            [arr[i], arr[minIndex]] = [arr[minIndex], arr[i]]
         }
     }
     return arr;
