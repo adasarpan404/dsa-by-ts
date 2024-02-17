@@ -1,4 +1,4 @@
-function selectionSort(arr: number[]): number[] {
+export function selectionSort(arr: number[]): number[] {
     const length = arr.length;
     for (let i = 0; i < length - 1; i++) {
         let minIndex = i;
@@ -16,9 +16,3 @@ function selectionSort(arr: number[]): number[] {
     }
     return arr;
 }
-
-let selectionSortArray = [3, 1, 4, 5, 2];
-
-selectionSortArray = selectionSort(selectionSortArray)
-
-console.log(selectionSortArray)

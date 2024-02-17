@@ -1,4 +1,4 @@
-function bubbleSort(arr: number[]): number[] {
+export function bubbleSort(arr: number[]): number[] {
     const length = arr.length
 
     for (let i = 0; i < length - 1; i++) {
@@ -12,9 +12,3 @@ function bubbleSort(arr: number[]): number[] {
     }
     return arr;
 }
-
-let bubbleSortArray = [3, 4, 5, 1, 2]
-
-bubbleSortArray = bubbleSort(bubbleSortArray)
-
-console.log(bubbleSortArray)
