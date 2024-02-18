@@ -8,7 +8,7 @@ export function selectionSort(arr: number[]): number[] {
             }
         }
         if (minIndex !== i) {
-            // Swap elements
+
             [arr[i], arr[minIndex]] = [arr[minIndex], arr[i]]
         }
     }
