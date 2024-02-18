@@ -30,28 +30,28 @@ class Queue<T> {
     }
 }
 
-const queue = new Queue<number>()
+// const queue = new Queue<number>()
 
-queue.enqueue(1)
-queue.enqueue(2)
-queue.enqueue(3)
+// queue.enqueue(1)
+// queue.enqueue(2)
+// queue.enqueue(3)
 
-console.log("Size:", queue.size())
-console.log("Peek:", queue.peek())
-console.log("Dequeue:", queue.dequeue())
-console.log("Size:", queue.size())
-queue.clear()
-console.log("Is empty:", queue.isEmpty())
+// console.log("Size:", queue.size())
+// console.log("Peek:", queue.peek())
+// console.log("Dequeue:", queue.dequeue())
+// console.log("Size:", queue.size())
+// queue.clear()
+// console.log("Is empty:", queue.isEmpty())
 
-console.log("String Queue implemented")
-const stringQueue = new Queue<string>()
+// console.log("String Queue implemented")
+// const stringQueue = new Queue<string>()
 
-stringQueue.enqueue("arpan")
-stringQueue.enqueue("das")
+// stringQueue.enqueue("arpan")
+// stringQueue.enqueue("das")
 
-console.log("Size:", stringQueue.size())
-console.log("Peek:", stringQueue.peek())
-console.log("Dequeue:", stringQueue.dequeue())
-console.log("Size:", stringQueue.size())
-stringQueue.clear()
-console.log("Is Empty:", stringQueue.isEmpty())
+// console.log("Size:", stringQueue.size())
+// console.log("Peek:", stringQueue.peek())
+// console.log("Dequeue:", stringQueue.dequeue())
+// console.log("Size:", stringQueue.size())
+// stringQueue.clear()
+// console.log("Is Empty:", stringQueue.isEmpty())
