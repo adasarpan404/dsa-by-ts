@@ -1,4 +1,4 @@
-class Stack<T> {
+export class Stack<T> {
     private items: T[]
 
     constructor() {
@@ -30,29 +30,29 @@ class Stack<T> {
     }
 }
 
-const stack = new Stack<number>()
+// const stack = new Stack<number>()
 
-stack.push(1)
-stack.push(2)
-stack.push(3)
+// stack.push(1)
+// stack.push(2)
+// stack.push(3)
 
-console.log("Size:", stack.size())
-console.log("Peek:", stack.peek())
-console.log("Pop:", stack.pop())
-console.log("Size:", stack.size())
-stack.clear()
-console.log("Is empty:", stack.isEmpty())
+// console.log("Size:", stack.size())
+// console.log("Peek:", stack.peek())
+// console.log("Pop:", stack.pop())
+// console.log("Size:", stack.size())
+// stack.clear()
+// console.log("Is empty:", stack.isEmpty())
 
 
-console.log("example of string stack")
-const stringStack = new Stack<string>()
+// console.log("example of string stack")
+// const stringStack = new Stack<string>()
 
-stringStack.push("arpan")
-stringStack.push("das")
+// stringStack.push("arpan")
+// stringStack.push("das")
 
-console.log("Size:", stringStack.size())
-console.log("Peek:", stringStack.peek())
-console.log("Pop:", stringStack.pop())
-console.log("Size:", stringStack.size())
-stringStack.clear()
-console.log("Is empty:", stringStack.isEmpty())
+// console.log("Size:", stringStack.size())
+// console.log("Peek:", stringStack.peek())
+// console.log("Pop:", stringStack.pop())
+// console.log("Size:", stringStack.size())
+// stringStack.clear()
+// console.log("Is empty:", stringStack.isEmpty())
