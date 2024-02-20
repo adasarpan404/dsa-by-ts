@@ -17,8 +17,8 @@ export function infixToPosfix(expression: string): string {
             while (!stack.isEmpty() && stack.peek() !== '(') {
                 result += stack.pop();
             }
-            stack.pop(); // Discard '('
-        } else { // operator
+            stack.pop();
+        } else {
             while (!stack.isEmpty() && precedence(char) <= precedence(stack.peek()!)) {
                 result += stack.pop();
             }
