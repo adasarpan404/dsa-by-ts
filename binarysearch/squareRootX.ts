@@ -1,4 +1,4 @@
-function sqrt(num: number): number {
+export function sqrt(num: number): number {
     if (num === 0) return 0;
     let left: number = 0, right: number = num, ans: number = 0;
     while (left <= right) {
@@ -13,10 +13,7 @@ function sqrt(num: number): number {
         }
     }
 
-    return parseFloat(ans.toFixed(2));
+    return Math.floor(ans);
 }
 
-console.log(sqrt(9))
-console.log(sqrt(17))
-console.log(sqrt(25))
 

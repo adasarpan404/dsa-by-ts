@@ -1,6 +1,7 @@
 import { binarySearch } from "./binarysearch";
 import { insertPosition } from "./insertPosition";
 import { isPerfectSquare } from "./isPerfectSquare";
+import { sqrt } from "./squareRootX";
 
 describe("binary search", () => {
     const num: number[] = [10, 20, 30, 40, 50, 60];
@@ -39,5 +40,15 @@ describe("is perfect square", () => {
 
     test("not perfect square", () => {
         expect(isPerfectSquare(20)).toBe(false)
+    })
+})
+
+describe("square root of x", () => {
+    test("square root of 16", () => {
+        expect(sqrt(16)).toBe(4)
+    })
+
+    test("square root of 9", () => {
+        expect(sqrt(9)).toBe(3)
     })
 })
