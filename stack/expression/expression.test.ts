@@ -1,5 +1,6 @@
 import { infixToPosfix } from "./infixToPostfix"
 import { infixToPrefix } from "./infixToPrefix"
+import { isOperator } from "./isoperator"
 import { precedence } from "./precedence"
 import { prefixToPostfix } from "./prefixToPostfix"
 
@@ -37,5 +38,22 @@ describe('precedence', () => {
         expect(precedence('%')).toBe(0);
         expect(precedence('')).toBe(0);
         expect(precedence('abc')).toBe(0);
+    });
+});
+
+describe('isOperator', () => {
+    test('returns true for valid operators', () => {
+        expect(isOperator('+')).toBe(true);
+        expect(isOperator('-')).toBe(true);
+        expect(isOperator('*')).toBe(true);
+        expect(isOperator('/')).toBe(true);
+    });
+
+    test('returns false for non-operators', () => {
+        expect(isOperator('')).toBe(false);
+        expect(isOperator('a')).toBe(false);
+        expect(isOperator('1')).toBe(false);
+        expect(isOperator(' ')).toBe(false);
+        expect(isOperator('()')).toBe(false);
     });
 });
