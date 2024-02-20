@@ -1,4 +1,4 @@
-function isPerfectSquare(num: number): boolean {
+export function isPerfectSquare(num: number): boolean {
     let low: number = 1;
     let high: number = num;
     while (low <= high) {
@@ -14,6 +14,3 @@ function isPerfectSquare(num: number): boolean {
     return false;
 }
 
-console.log(isPerfectSquare(9) ? "It is Perfect Square" : "It is not Perfect Square")
-console.log(isPerfectSquare(17) ? "It is Perfect Square" : "It is not Perfect Square")
-console.log(isPerfectSquare(25) ? "It is Perfect Square" : "It is not Perfect Square")
