@@ -1,5 +1,5 @@
 export function recursiveBubbleSort(arr: number[], n: number = arr.length): number[] {
-    if (n == 1) {
+    if (n == 1 || n == 0) {
         return arr;
     }
     for (let i = 0; i < n - 1; i++) {
