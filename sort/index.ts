@@ -5,7 +5,7 @@ import { recursiveInsertionSort } from "./recursiveInsertionSort"
 import { recursiveSelectionSort } from "./recursiveSelectionSort"
 import { selectionSort } from "./selectionSort"
 
-const arr = [5, 4, 1, 3, 2]
+const arr = [5, 3, 8, 1, 2]
 
 let sortArr = bubbleSort(arr)
 
