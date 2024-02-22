@@ -1,4 +1,4 @@
-class IpHashLoadBalancer {
+export class IpHashLoadBalancer {
     private serverMap: Map<string, string> = new Map();
 
     addServer(ipAddress: string, server: string): void {

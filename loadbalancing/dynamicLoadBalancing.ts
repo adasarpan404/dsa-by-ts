@@ -1,4 +1,4 @@
-class DynamicServer {
+export class DynamicServer {
     name: string;
     load: number;
 
@@ -8,7 +8,7 @@ class DynamicServer {
     }
 }
 
-class DynamicLoadBalancer {
+export class DynamicLoadBalancer {
     private servers: DynamicServer[] = [];
 
     addServer(serverName: string): void {
