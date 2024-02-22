@@ -7,7 +7,7 @@ class LeastConnectionServer {
     }
 }
 
-class LeastConnectionLoadBalancer {
+export class LeastConnectionLoadBalancer {
     private servers: LeastConnectionServer[] = []
 
     constructor() { }
