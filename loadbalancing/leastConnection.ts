@@ -32,14 +32,3 @@ export class LeastConnectionLoadBalancer {
         return this.servers[minIndex].name;
     }
 }
-
-const leastConnectionLoadBalancer = new LeastConnectionLoadBalancer();
-
-leastConnectionLoadBalancer.addServer("Server 1");
-leastConnectionLoadBalancer.addServer("Server 2");
-leastConnectionLoadBalancer.addServer("Server 3");
-
-for (let i = 0; i < 10; ++i) {
-    const server = leastConnectionLoadBalancer.nextServer();
-    console.log(`Request ${i + 1} directed to: ${server}`);
-}

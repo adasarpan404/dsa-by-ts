@@ -7,7 +7,7 @@ class WeightedRoundRobinServer {
     }
 }
 
-class WeightedRoundRobinLoadBalancer {
+export class WeightedRoundRobinLoadBalancer {
     private servers: WeightedRoundRobinServer[] = [];
     private currentServerIndex: number = 0;
     private currentWeight: number = 0;
