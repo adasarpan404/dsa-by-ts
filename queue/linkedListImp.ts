@@ -1,24 +1,24 @@
-class QueueNode {
-    data: number;
-    next: QueueNode | null;
+class QueueNode<T> {
+    data: T;
+    next: QueueNode<T> | null;
 
-    constructor(value: number) {
+    constructor(value: T) {
         this.data = value;
         this.next = null;
     }
 }
 
-class Queue {
-    head: QueueNode | null;
-    tail: QueueNode | null;
+export class Queue<T> {
+    head: QueueNode<T> | null;
+    tail: QueueNode<T> | null;
 
     constructor() {
         this.head = null;
         this.tail = null;
     }
 
-    enqueue(value: number): void {
-        const newNode: QueueNode = new QueueNode(value);
+    enqueue(value: T): void {
+        const newNode: QueueNode<T> = new QueueNode<T>(value);
         if (!this.head) {
             this.head = newNode;
             this.tail = newNode;
@@ -45,7 +45,7 @@ class Queue {
         }
     }
 
-    front(): number | null {
+    front(): T | null {
         if (this.head) {
             return this.head.data;
         } else {
@@ -58,11 +58,3 @@ class Queue {
     }
 }
 
-// Example usage:
-const queue = new Queue();
-queue.enqueue(1);
-queue.enqueue(2);
-queue.enqueue(3);
-console.log(queue.front()); // Output: 1
-queue.dequeue();
-console.log(queue.front()); // Output: 2
