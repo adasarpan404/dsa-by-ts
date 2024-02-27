@@ -7,7 +7,7 @@ class nodeinsertion {
     }
 }
 
-class InsertionLinkedList {
+export class InsertionLinkedList {
     head: nodeinsertion | null;
     constructor() {
         this.head = null;
@@ -55,27 +55,3 @@ class InsertionLinkedList {
         }
     }
 }
-
-const insertionLinkedList = new InsertionLinkedList();
-console.log("insertion at head")
-insertionLinkedList.insertAtHead(1);
-insertionLinkedList.insertAtHead(2);
-insertionLinkedList.insertAtHead(3);
-
-insertionLinkedList.display()
-
-console.log("insertion at tail")
-const insertionLinkedList1 = new InsertionLinkedList();
-insertionLinkedList1.insertAtTail(1);
-insertionLinkedList1.insertAtTail(2);
-insertionLinkedList1.insertAtTail(3);
-insertionLinkedList1.display()
-
-// 1->2->3
-
-console.log("inserting 4 after 2")
-
-insertionLinkedList1.insertAfter(4, 2);
-insertionLinkedList1.display();
-
-// 1-> 2-> 4-> 3
