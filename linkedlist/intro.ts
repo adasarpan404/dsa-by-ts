@@ -8,7 +8,7 @@ class node {
     }
 }
 
-class LinkedList {
+export class LinkedList {
     head: node | null;
 
     constructor() {
@@ -38,11 +38,3 @@ class LinkedList {
         }
     }
 }
-
-// Example usage
-const linkedList = new LinkedList();
-linkedList.append(1);
-linkedList.append(2);
-linkedList.append(3);
-
-linkedList.display();
