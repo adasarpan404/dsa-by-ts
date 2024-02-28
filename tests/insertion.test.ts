@@ -1,4 +1,4 @@
-import { InsertionLinkedList } from "./insertion";
+import { InsertionLinkedList } from "../linkedlist/insertion";
 
 
 describe('InsertionLinkedList', () => {

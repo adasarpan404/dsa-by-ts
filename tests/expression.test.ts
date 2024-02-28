@@ -1,8 +1,8 @@
-import { infixToPosfix } from "./infixToPostfix"
-import { infixToPrefix } from "./infixToPrefix"
-import { isOperator } from "./isoperator"
-import { precedence } from "./precedence"
-import { prefixToPostfix } from "./prefixToPostfix"
+import { infixToPosfix } from "../stack/expression/infixToPostfix"
+import { infixToPrefix } from "../stack/expression/infixToPrefix"
+import { isOperator } from "../stack/expression/isoperator"
+import { precedence } from "../stack/expression/precedence"
+import { prefixToPostfix } from "../stack/expression/prefixToPostfix"
 
 test('infix to postfix', () => {
     const infixExpression = "a + b * (c - d)"

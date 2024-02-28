@@ -1,4 +1,4 @@
-import { DeletionLinkedList } from "./deletion";
+import { DeletionLinkedList } from "../linkedlist/deletion";
 
 describe('DeletionLinkedList', () => {
     let list: DeletionLinkedList;

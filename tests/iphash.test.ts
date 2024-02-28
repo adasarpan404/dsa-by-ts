@@ -1,4 +1,4 @@
-import { IpHashLoadBalancer } from "./iphash";
+import { IpHashLoadBalancer } from "../loadbalancing/iphash";
 
 
 describe('IpHashLoadBalancer', () => {

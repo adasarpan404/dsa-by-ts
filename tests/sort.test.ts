@@ -1,12 +1,12 @@
-import { bubbleSort } from './bubbleSort';
-import { dnfSort } from './dnfSort';
-import { insertionSort } from './insertionSort';
-import { mergeSort } from './mergeSort';
-import { quickSort } from './quickSort';
-import { recursiveBubbleSort } from './recursiveBubbleSort';
-import { recursiveInsertionSort } from './recursiveInsertionSort';
-import { recursiveSelectionSort } from './recursiveSelectionSort';
-import { selectionSort } from './selectionSort';
+import { bubbleSort } from '../sort/bubbleSort';
+import { dnfSort } from '../sort/dnfSort';
+import { insertionSort } from '../sort/insertionSort';
+import { mergeSort } from '../sort/mergeSort';
+import { quickSort } from '../sort/quickSort';
+import { recursiveBubbleSort } from '../sort/recursiveBubbleSort';
+import { recursiveInsertionSort } from '../sort/recursiveInsertionSort';
+import { recursiveSelectionSort } from '../sort/recursiveSelectionSort';
+import { selectionSort } from '../sort/selectionSort';
 
 describe("Sorting test", () => {
     describe('bubbleSort', () => {
