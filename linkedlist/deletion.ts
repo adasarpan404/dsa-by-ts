@@ -7,7 +7,7 @@ class nodedeletion {
     }
 }
 
-class DeletionLinkedList {
+export class DeletionLinkedList {
     head: nodedeletion | null;
 
     constructor() {
