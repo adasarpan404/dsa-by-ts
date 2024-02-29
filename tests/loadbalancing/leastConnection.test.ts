@@ -1,4 +1,4 @@
-import { LeastConnectionLoadBalancer } from "../loadbalancing/leastConnection";
+import { LeastConnectionLoadBalancer } from "../../loadbalancing/leastConnection";
 
 
 describe('LeastConnectionLoadBalancer', () => {

@@ -1,4 +1,4 @@
-import { DynamicLoadBalancer } from "../loadbalancing/dynamicLoadBalancing";
+import { DynamicLoadBalancer } from "../../loadbalancing/dynamicLoadBalancing";
 
 
 describe('DynamicLoadBalancer', () => {

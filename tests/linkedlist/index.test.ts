@@ -1,4 +1,4 @@
-import { LinkedList } from '../linkedlist/intro'; // Assuming LinkedList class is in a separate file
+import { LinkedList } from '../../linkedlist/intro'; // Assuming LinkedList class is in a separate file
 
 describe('LinkedList', () => {
     test('append method adds elements to the list', () => {

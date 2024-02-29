@@ -1,4 +1,4 @@
-import { RoundRobinLoadBalancer } from "../loadbalancing/roundrobin";
+import { RoundRobinLoadBalancer } from "../../loadbalancing/roundrobin";
 
 
 describe('RoundRobinLoadBalancer', () => {
