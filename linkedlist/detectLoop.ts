@@ -7,7 +7,7 @@ class detectLoopNode {
     }
 }
 
-class DetectLoopLinkedList {
+export class DetectLoopLinkedList {
     head: detectLoopNode | null
     constructor() {
         this.head = null;
