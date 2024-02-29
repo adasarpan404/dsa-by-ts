@@ -1,4 +1,4 @@
-import { Queue } from '../queue/linkedListImp';
+import { Queue } from '../../queue/linkedListImp';
 
 describe('Queue', () => {
     let queue: Queue<number>;
