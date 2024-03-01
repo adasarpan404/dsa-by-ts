@@ -7,7 +7,7 @@ class middleNode {
     }
 }
 
-class MiddleLinkedList {
+export class MiddleLinkedList {
     head: middleNode | null;
 
     constructor() {
@@ -54,7 +54,7 @@ middleLinkedList.append(2);
 middleLinkedList.append(3);
 middleLinkedList.append(4);
 middleLinkedList.append(5);
-
+// middleLinkedList.append(6);
 
 middleLinkedList.display()
 const middleElement = middleLinkedList.middle()
