@@ -7,7 +7,7 @@ class addOneNode {
     }
 }
 
-class AddOneLinkedList {
+export class AddOneLinkedList {
     head: addOneNode | null;
     constructor() {
         this.head = null;
