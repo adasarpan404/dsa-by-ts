@@ -7,7 +7,7 @@ class reverseNode {
     }
 }
 
-class ReverseLinkedList {
+export class ReverseLinkedList {
     head: reverseNode | null
     constructor() {
         this.head = null
