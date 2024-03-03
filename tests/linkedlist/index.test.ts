@@ -1,7 +1,7 @@
 import { LinkedList } from '../../linkedlist/intro'; // Assuming LinkedList class is in a separate file
 
 describe('LinkedList', () => {
-    test('append method adds elements to the list', () => {
+    it('append method adds elements to the list', () => {
         const list = new LinkedList();
         list.append(1);
         list.append(2);
@@ -11,7 +11,7 @@ describe('LinkedList', () => {
         expect(list.head!.next!.next!.data).toBe(3);
     });
 
-    test('display method prints the elements of the list', () => {
+    it('display method prints the elements of the list', () => {
         const list = new LinkedList();
         const consoleSpy = jest.spyOn(console, 'log').mockImplementation(() => { });
         list.append(1);

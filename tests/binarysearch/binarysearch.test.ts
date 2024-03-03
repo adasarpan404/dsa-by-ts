@@ -1,4 +1,5 @@
 import { binarySearch } from "../../binarysearch/binarysearch";
+import { findPeakElement } from "../../binarysearch/findPeakElement";
 import { FirstAndLastPositions } from "../../binarysearch/firstAndLastPositions";
 import { insertPosition } from "../../binarysearch/insertPosition";
 import { isPerfectSquare } from "../../binarysearch/isPerfectSquare";
@@ -54,7 +55,7 @@ describe("square root of x", () => {
     })
 })
 
-describe('Solution', () => {
+describe('First and Last Positions', () => {
     let solution: FirstAndLastPositions;
 
     beforeEach(() => {
@@ -96,3 +97,11 @@ describe('Solution', () => {
         expect(solution.searchRange(nums, target)).toEqual(expectedRange);
     });
 });
+
+describe('peak element', () => {
+    it('should return 3', () => {
+        const nums = [1, 2, 3, 1]
+        const peakElement = findPeakElement(nums)
+        expect(peakElement).toBe(3)
+    })
+})

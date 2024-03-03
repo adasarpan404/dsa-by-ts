@@ -7,14 +7,14 @@ describe('DeletionLinkedList', () => {
         list = new DeletionLinkedList();
     });
 
-    test('deleteAtHead method deletes the head node', () => {
+    it('deleteAtHead method deletes the head node', () => {
         list.insertAtHead(1);
         list.insertAtHead(2);
         list.deleteAtHead();
         expect(list.head!.data).toBe(1);
     });
 
-    test('deleteAtEnd method deletes the last node', () => {
+    it('deleteAtEnd method deletes the last node', () => {
         list.insertAtHead(1);
         list.insertAtHead(2);
         list.insertAtHead(3);
@@ -22,7 +22,7 @@ describe('DeletionLinkedList', () => {
         expect(list.head!.data).toBe(3);
     });
 
-    test('deleteAtCertainPostion method deletes node at the specified position', () => {
+    it('deleteAtCertainPostion method deletes node at the specified position', () => {
         list.insertAtHead(1);
         list.insertAtHead(2);
         list.insertAtHead(3);
@@ -31,7 +31,7 @@ describe('DeletionLinkedList', () => {
         expect(list.head!.next!.data).toBe(1);
     });
 
-    test('deleteAtCertainPostion method handles position out of range', () => {
+    it('deleteAtCertainPostion method handles position out of range', () => {
         list.insertAtHead(1);
         list.insertAtHead(2);
         list.insertAtHead(3);
@@ -41,7 +41,7 @@ describe('DeletionLinkedList', () => {
         expect(list.head!.next!.next!.data).toBe(1);
     });
 
-    test('deleteAtCertainPostion method handles deleting the head node', () => {
+    it('deleteAtCertainPostion method handles deleting the head node', () => {
         list.insertAtHead(1);
         list.insertAtHead(2);
         list.insertAtHead(3);
@@ -50,7 +50,7 @@ describe('DeletionLinkedList', () => {
         expect(list.head!.next!.data).toBe(1);
     });
 
-    test('deleteAtCertainPostion method handles deleting the last node', () => {
+    it('deleteAtCertainPostion method handles deleting the last node', () => {
         list.insertAtHead(1);
         list.insertAtHead(2);
         list.insertAtHead(3);
@@ -60,7 +60,7 @@ describe('DeletionLinkedList', () => {
         expect(list.head!.next!.next).toBe(null);
     });
 
-    test('display method prints the elements of the list', () => {
+    it('display method prints the elements of the list', () => {
         const consoleSpy = jest.spyOn(console, 'log').mockImplementation(() => { });
         list.insertAtHead(1);
         list.insertAtHead(2);

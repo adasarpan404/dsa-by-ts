@@ -7,7 +7,7 @@ describe('Detect Loop', () => {
         detectLoop = new DetectLoopLinkedList();
     })
 
-    test('Detect a loop by method 1', () => {
+    it('Detect a loop by method 1', () => {
         detectLoop.append(1)
         detectLoop.append(2)
         detectLoop.append(3)
@@ -17,7 +17,7 @@ describe('Detect Loop', () => {
         expect(detectLoop.detectLoop1()).toBe(true)
     })
 
-    test('Check for falsy condition by method 1', () => {
+    it('Check for falsy condition by method 1', () => {
         detectLoop.append(1)
         detectLoop.append(2)
         detectLoop.append(3)
@@ -26,7 +26,7 @@ describe('Detect Loop', () => {
         expect(detectLoop.detectLoop1()).toBe(false)
     })
 
-    test('Detect a loop by method 1', () => {
+    it('Detect a loop by method 1', () => {
         detectLoop.append(1)
         detectLoop.append(2)
         detectLoop.append(3)
@@ -36,7 +36,7 @@ describe('Detect Loop', () => {
         expect(detectLoop.detectLoop2()).toBe(true)
     })
 
-    test('Check for falsy condition by method 1', () => {
+    it('Check for falsy condition by method 1', () => {
         detectLoop.append(1)
         detectLoop.append(2)
         detectLoop.append(3)
