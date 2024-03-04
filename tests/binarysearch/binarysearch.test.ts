@@ -99,3 +99,38 @@ describe('First and Last Positions', () => {
     });
 });
 
+describe('peak element', () => {
+    it('should return 3', () => {
+        const nums = [1, 2, 3, 1]
+        const peakElement = findPeakElement(nums)
+        expect(peakElement).toBe(3)
+    })
+})
+
+describe('Solution', () => {
+    let solution: SearchInRotatedArray;
+
+    beforeEach(() => {
+        solution = new SearchInRotatedArray();
+    });
+
+    it('should find the index of target element in a sorted rotated array', () => {
+        const nums = [4, 5, 6, 7, 0, 1, 2];
+        expect(solution.search(nums, 0)).toBe(4);
+    });
+
+    it('should return -1 if target element is not present in the array', () => {
+        const nums = [4, 5, 6, 7, 0, 1, 2];
+        expect(solution.search(nums, 3)).toBe(-1);
+    });
+
+    it('should return -1 if array is empty', () => {
+        const nums: number[] = [];
+        expect(solution.search(nums, 5)).toBe(-1);
+    });
+
+    it('should return the index of the target element in a sorted array', () => {
+        const nums = [1, 3, 5, 7, 9];
+        expect(solution.search(nums, 3)).toBe(1);
+    });
+});
