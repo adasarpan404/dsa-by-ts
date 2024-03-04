@@ -1,4 +1,5 @@
 import { binarySearch } from "../../binarysearch/binarysearch";
+import { findKthPositive } from "../../binarysearch/findKthPositive";
 import { findPeakElement } from "../../binarysearch/findPeakElement";
 import { FirstAndLastPositions } from "../../binarysearch/firstAndLastPositions";
 import { insertPosition } from "../../binarysearch/insertPosition";
@@ -135,3 +136,28 @@ describe('Solution', () => {
     });
 });
 
+describe('Solution', () => {
+    it('should return the k-th missing positive integer', () => {
+        const nums = [2, 3, 4, 7, 11];
+        const k = 5;
+        expect(findKthPositive(nums, k)).toBe(9);
+    });
+
+    it('should return the k-th missing positive integer when k is 1', () => {
+        const nums = [1, 2, 3, 4, 5];
+        const k = 1;
+        expect(findKthPositive(nums, k)).toBe(6);
+    });
+
+    it('should return the k-th missing positive integer when k is greater than the missing integers count', () => {
+        const nums = [1, 2, 3];
+        const k = 5;
+        expect(findKthPositive(nums, k)).toBe(7);
+    });
+
+    it('should return the k-th missing positive integer when nums contains duplicate values', () => {
+        const nums = [2, 2, 3, 4, 7, 11];
+        const k = 5;
+        expect(findKthPositive(nums, k)).toBe(9);
+    });
+});
