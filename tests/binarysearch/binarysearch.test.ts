@@ -134,3 +134,4 @@ describe('Solution', () => {
         expect(solution.search(nums, 3)).toBe(1);
     });
 });
+
