@@ -3,6 +3,7 @@ import { findPeakElement } from "../../binarysearch/findPeakElement";
 import { FirstAndLastPositions } from "../../binarysearch/firstAndLastPositions";
 import { insertPosition } from "../../binarysearch/insertPosition";
 import { isPerfectSquare } from "../../binarysearch/isPerfectSquare";
+import { SearchInRotatedArray } from "../../binarysearch/searchInRotatedArray";
 import { sqrt } from "../../binarysearch/squareRootX";
 
 describe("binary search", () => {
@@ -98,10 +99,3 @@ describe('First and Last Positions', () => {
     });
 });
 
-describe('peak element', () => {
-    it('should return 3', () => {
-        const nums = [1, 2, 3, 1]
-        const peakElement = findPeakElement(nums)
-        expect(peakElement).toBe(3)
-    })
-})
