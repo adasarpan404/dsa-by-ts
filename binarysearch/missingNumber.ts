@@ -1,14 +1,15 @@
-export function missingNumber(nums: number[]): number {
-    nums.sort((a, b) => a - b);
+export function findMissingNumber(nums: number[]): number {
     let left = 0;
     let right = nums.length;
+
     while (left < right) {
-        let mid = left + Math.floor((right - left) / 2);
-        if (nums[mid] > mid) {
-            right = mid;
-        } else {
+        const mid = left + Math.floor((right - left) / 2);
+        if (nums[mid] === mid + 1) {
             left = mid + 1;
+        } else {
+            right = mid;
         }
     }
-    return left;
+
+    return left + 1;
 }

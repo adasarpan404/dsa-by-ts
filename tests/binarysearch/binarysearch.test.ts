@@ -4,6 +4,7 @@ import { findPeakElement } from "../../binarysearch/findPeakElement";
 import { FirstAndLastPositions } from "../../binarysearch/firstAndLastPositions";
 import { insertPosition } from "../../binarysearch/insertPosition";
 import { isPerfectSquare } from "../../binarysearch/isPerfectSquare";
+import { findMissingNumber } from "../../binarysearch/missingNumber";
 import { SearchInRotatedArray } from "../../binarysearch/searchInRotatedArray";
 import { sqrt } from "../../binarysearch/squareRootX";
 
@@ -136,7 +137,7 @@ describe('Solution', () => {
     });
 });
 
-describe('Solution', () => {
+describe('k-th positive', () => {
     it('should return the k-th missing positive integer', () => {
         const nums = [2, 3, 4, 7, 11];
         const k = 5;
@@ -161,3 +162,37 @@ describe('Solution', () => {
         expect(findKthPositive(nums, k)).toBe(9);
     });
 });
+
+
+describe('findMissingNumber', () => {
+    it('should return the smallest missing positive integer', () => {
+        const nums = [0, 1, 2, 4, 5]; // The smallest missing positive integer is 3
+        expect(findMissingNumber(nums)).toBe(3);
+    });
+
+    it('should return 1 if the array is empty', () => {
+        const nums: number[] = [];
+        expect(findMissingNumber(nums)).toBe(1);
+    });
+
+    it('should return the smallest missing positive integer when the array contains negative numbers', () => {
+        const nums = [-1, -2, 0, 1, 2, 4, 5]; // The smallest missing positive integer is 3
+        expect(findMissingNumber(nums)).toBe(3);
+    });
+
+    it('should return the smallest missing positive integer when the array contains duplicate values', () => {
+        const nums = [0, 1, 1, 2, 2, 4, 4, 5]; // The smallest missing positive integer is 3
+        expect(findMissingNumber(nums)).toBe(3);
+    });
+
+    it('should return the smallest missing positive integer when the array contains only negative numbers', () => {
+        const nums = [-5, -4, -3, -2, -1]; // The smallest missing positive integer is 1
+        expect(findMissingNumber(nums)).toBe(1);
+    });
+
+    it('should return the smallest missing positive integer when the array contains only non-positive numbers', () => {
+        const nums = [-2, 0, 0, 0]; // The smallest missing positive integer is 1
+        expect(findMissingNumber(nums)).toBe(1);
+    });
+});
+
