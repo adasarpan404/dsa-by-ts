@@ -1,4 +1,4 @@
-class nodeinsertion {
+export class nodeinsertion {
     data: number;
     next: nodeinsertion | null;
     constructor(data: number) {
