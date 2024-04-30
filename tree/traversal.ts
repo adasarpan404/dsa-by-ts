@@ -1,15 +1,6 @@
-export class TraversalNode {
-    data: number
-    left: TraversalNode | null
-    right: TraversalNode | null
-    constructor(val: number) {
-        this.data = val
-        this.left = null
-        this.right = null
-    }
-}
+import { TreeNode } from ".";
 
-function inorder(root: TraversalNode | null, arr: number[]): void {
+function inorder(root: TreeNode | null, arr: number[]): void {
     if (root == null) {
         return;
     }
@@ -18,7 +9,7 @@ function inorder(root: TraversalNode | null, arr: number[]): void {
     inorder(root.right, arr);
 }
 
-export function inorderTraversal(root: TraversalNode | null): number[] {
+export function inorderTraversal(root: TreeNode | null): number[] {
     const arr: number[] = [];
 
     inorder(root, arr);
@@ -26,7 +17,7 @@ export function inorderTraversal(root: TraversalNode | null): number[] {
     return arr;
 }
 
-function postOrder(root: TraversalNode | null, arr: number[]): void {
+function postOrder(root: TreeNode | null, arr: number[]): void {
     if (root == null) {
         return;
     }
@@ -37,7 +28,7 @@ function postOrder(root: TraversalNode | null, arr: number[]): void {
     arr.push(root.data);
 }
 
-export function postorderTraversal(root: TraversalNode | null): number[] {
+export function postorderTraversal(root: TreeNode | null): number[] {
     const arr: number[] = [];
 
     postOrder(root, arr);
@@ -45,7 +36,7 @@ export function postorderTraversal(root: TraversalNode | null): number[] {
     return arr;
 }
 
-function preOrder(root: TraversalNode | null, arr: number[]): void {
+function preOrder(root: TreeNode | null, arr: number[]): void {
     if (root == null) {
         return;
     }
@@ -55,7 +46,7 @@ function preOrder(root: TraversalNode | null, arr: number[]): void {
 
 }
 
-export function preOrderTraversal(root: TraversalNode | null): number[] {
+export function preOrderTraversal(root: TreeNode | null): number[] {
     const arr: number[] = [];
 
     preOrder(root, arr);
@@ -63,7 +54,7 @@ export function preOrderTraversal(root: TraversalNode | null): number[] {
     return arr;
 }
 
-export function morrisInorderTraversal(root: TraversalNode | null): number[] {
+export function morrisInorderTraversal(root: TreeNode | null): number[] {
     let inorder: number[] = [];
     let cur = root;
     while (cur != null) {
@@ -89,9 +80,9 @@ export function morrisInorderTraversal(root: TraversalNode | null): number[] {
     return inorder;
 }
 
-export function morrisPreOrderTraversal(root: TraversalNode | null): number[] {
+export function morrisPreOrderTraversal(root: TreeNode | null): number[] {
     const result: number[] = [];
-    let current: TraversalNode | null = root;
+    let current: TreeNode | null = root;
 
     while (current !== null) {
         if (current.left === null) {
