@@ -39,4 +39,4 @@ export function leftSideView(root: TreeNode | null): number[] {
     leftSideRecursion(root, 0, res);
 
     return res;
-}    
+}      
